@@ -1,11 +1,9 @@
+import { useEffect, useState } from "react";
+import MovieCard from "./MovieCard";
+
+
 const MainPage = () =>{
-    return(
-        <>
-        <div>
-            <h1>Aqui van mis cards</h1>
-        </div>
-        </>
-    )
+    
 }
 
 
