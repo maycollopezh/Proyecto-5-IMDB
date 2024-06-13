@@ -1,26 +1,22 @@
-import { useState, useEffect } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-import RouterIndex from './router/RouterIndex'
-import {BrowserRouter} from 'react-router-dom'
-
-
-import Header from './components/Header'
-
-import MainPage from './components/MainPage'
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import Header from './components/Header';
+import RouterIndex from './router/RouterIndex';
+import Footer from './components/Footer';
+import Filtrado from './components/Filtrado'; 
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <BrowserRouter>
-        <RouterIndex />
-      </BrowserRouter>
-    </>
-  )
+    return (
+        <BrowserRouter>
+            <div>
+                <Header />
+                <Filtrado /> 
+                <RouterIndex />
+            </div>
+            <Footer />
+        </BrowserRouter>
+    );
 }
 
-export default App
+export default App;
